@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress.gen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_buffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_bufferevent.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_dns.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_et.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_finalize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_http.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_listener.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_minheap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_rpc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_testutils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\tinytest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\buffer.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\bufferevent.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\bufferevent_filter.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\bufferevent_pair.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\bufferevent_ratelim.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\bufferevent_sock.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\event.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\evmap.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\evthread.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\evutil.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\evutil_rand.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\evutil_time.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\listener.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\log.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\signal.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\strlcpy.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\bufferevent_openssl.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\evthread_win32.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\buffer_iocp.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\bufferevent_async.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\event_iocp.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\win32select.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\event_tagging.c">
+      <Filter>Source Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\http.c">
+      <Filter>Source Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\evdns.c">
+      <Filter>Source Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\evrpc.c">
+      <Filter>Source Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_iocp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_thread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_ssl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress.gen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_testutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\CMakeFiles\8854fd36e6b521d6db2cee8960e3fe23\regress.gen.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{04E276D7-6993-32D0-ABAC-E48CCF258CC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3981F02A-F2A9-3F57-921E-6424FD117650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Core">
+      <UniqueIdentifier>{D4D55535-3551-3B3C-9650-7493EA0098CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Extra">
+      <UniqueIdentifier>{3D000BBE-A7C1-39AC-9800-F87BCD4870E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3734E946-60C7-371E-9E22-3BB44774A59E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

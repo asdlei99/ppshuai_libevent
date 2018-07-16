@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B3B99A1C-77E1-3A2A-B34C-7E00D63A5C83}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>regress</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Platform)\$(Configuration)\$(ProjectName)</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Platform)\$(Configuration)\$(ProjectName)</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\vcprojects\include;$(SolutionDir)..\libevent-release-2.1.8-stable\include;$(SolutionDir)..\libevent-release-2.1.8-stable\compat;$(SolutionDir)..\libevent-release-2.1.8-stable;$(SolutionDir)..\libevent-release-2.1.8-stable\.\WIN32-Code;$(SolutionDir)..\vcprojects\ThirdPartyLibrary\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;EVENT_BUILDING_REGRESS_TEST=1;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;TINYTEST_LOCAL;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;EVENT_BUILDING_REGRESS_TEST=1;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;TINYTEST_LOCAL;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\compat;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable;D:\DevelopmentEnvironment\Workspaces\ThirdPartyLibrary\openssl\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\.\WIN32-Code;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\compat;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable;D:\DevelopmentEnvironment\Workspaces\ThirdPartyLibrary\openssl\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\.\WIN32-Code;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ssleay32.lib;libeay32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)../vcprojects/$(Platform)/$(Configuration);$(SolutionDir)../vcprojects/ThirdPartyLibrary/openssl/lib/$(Platform)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(SolutionDir)../vcprojects/$(Platform)/$(Configuration)/$(ProjectName).LIB</ImportLibrary>
+      <ProgramDataBaseFile>D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/vcprojects/bin/Debug/regress.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\vcprojects\include;$(SolutionDir)..\libevent-release-2.1.8-stable\include;$(SolutionDir)..\libevent-release-2.1.8-stable\compat;$(SolutionDir)..\libevent-release-2.1.8-stable;$(SolutionDir)..\libevent-release-2.1.8-stable\.\WIN32-Code;$(SolutionDir)..\vcprojects\ThirdPartyLibrary\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;EVENT_BUILDING_REGRESS_TEST=1;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;TINYTEST_LOCAL;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;EVENT_BUILDING_REGRESS_TEST=1;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;TINYTEST_LOCAL;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\compat;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable;D:\DevelopmentEnvironment\Workspaces\ThirdPartyLibrary\openssl\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\.\WIN32-Code;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\compat;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable;D:\DevelopmentEnvironment\Workspaces\ThirdPartyLibrary\openssl\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\.\WIN32-Code;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ssleay32.lib;libeay32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)../vcprojects/$(Platform)/$(Configuration);$(SolutionDir)../vcprojects/ThirdPartyLibrary/openssl/lib/$(Platform)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(SolutionDir)../vcprojects/$(Platform)/$(Configuration)/$(ProjectName).LIB</ImportLibrary>
+      <ProgramDataBaseFile>D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/vcprojects/bin/Debug/regress.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\vcprojects\include;$(SolutionDir)..\libevent-release-2.1.8-stable\include;$(SolutionDir)..\libevent-release-2.1.8-stable\compat;$(SolutionDir)..\libevent-release-2.1.8-stable;$(SolutionDir)..\libevent-release-2.1.8-stable\.\WIN32-Code;$(SolutionDir)..\vcprojects\ThirdPartyLibrary\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;EVENT_BUILDING_REGRESS_TEST=1;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;TINYTEST_LOCAL;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;EVENT_BUILDING_REGRESS_TEST=1;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;TINYTEST_LOCAL;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\compat;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable;D:\DevelopmentEnvironment\Workspaces\ThirdPartyLibrary\openssl\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\.\WIN32-Code;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\compat;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable;D:\DevelopmentEnvironment\Workspaces\ThirdPartyLibrary\openssl\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\.\WIN32-Code;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ssleay32.lib;libeay32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)../vcprojects/$(Platform)/$(Configuration);$(SolutionDir)../vcprojects/ThirdPartyLibrary/openssl/lib/$(Platform)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(SolutionDir)../vcprojects/$(Platform)/$(Configuration)/$(ProjectName).LIB</ImportLibrary>
+      <ProgramDataBaseFile>D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/vcprojects/bin/Release/regress.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\vcprojects\include;$(SolutionDir)..\libevent-release-2.1.8-stable\include;$(SolutionDir)..\libevent-release-2.1.8-stable\compat;$(SolutionDir)..\libevent-release-2.1.8-stable;$(SolutionDir)..\libevent-release-2.1.8-stable\.\WIN32-Code;$(SolutionDir)..\vcprojects\ThirdPartyLibrary\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;EVENT_BUILDING_REGRESS_TEST=1;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;TINYTEST_LOCAL;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;EVENT_BUILDING_REGRESS_TEST=1;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;TINYTEST_LOCAL;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\compat;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable;D:\DevelopmentEnvironment\Workspaces\ThirdPartyLibrary\openssl\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\.\WIN32-Code;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\compat;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable;D:\DevelopmentEnvironment\Workspaces\ThirdPartyLibrary\openssl\include;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\.\WIN32-Code;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ssleay32.lib;libeay32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)../vcprojects/$(Platform)/$(Configuration);$(SolutionDir)../vcprojects/ThirdPartyLibrary/openssl/lib/$(Platform)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(SolutionDir)../vcprojects/$(Platform)/$(Configuration)/$(ProjectName).LIB</ImportLibrary>
+      <ProgramDataBaseFile>D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/vcprojects/bin/Release/regress.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\CMakeFiles\8854fd36e6b521d6db2cee8960e3fe23\regress.gen.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/libevent-release-2.1.8-stable/test/regress.gen.c, D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/libevent-release-2.1.8-stable/test/regress.gen.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/libevent-release-2.1.8-stable/test/regress.gen.c, D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/libevent-release-2.1.8-stable/test/regress.gen.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+cd D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Softwares\Python27\python.exe ../event_rpcgen.py regress.rpc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Softwares\Python27\python.exe ../event_rpcgen.py regress.rpc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/vcprojects/CMakeFiles/8854fd36e6b521d6db2cee8960e3fe23/regress.gen.c.rule;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\event_rpcgen.py;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress.rpc;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/vcprojects/CMakeFiles/8854fd36e6b521d6db2cee8960e3fe23/regress.gen.c.rule;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\event_rpcgen.py;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress.rpc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress.gen.c;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress.gen.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress.gen.c;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress.gen.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/libevent-release-2.1.8-stable/test/regress.gen.c, D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/libevent-release-2.1.8-stable/test/regress.gen.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/libevent-release-2.1.8-stable/test/regress.gen.c, D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/libevent-release-2.1.8-stable/test/regress.gen.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+cd D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Softwares\Python27\python.exe ../event_rpcgen.py regress.rpc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\Softwares\Python27\python.exe ../event_rpcgen.py regress.rpc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/vcprojects/CMakeFiles/8854fd36e6b521d6db2cee8960e3fe23/regress.gen.c.rule;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\event_rpcgen.py;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress.rpc;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/vcprojects/CMakeFiles/8854fd36e6b521d6db2cee8960e3fe23/regress.gen.c.rule;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\event_rpcgen.py;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress.rpc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress.gen.c;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress.gen.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress.gen.c;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress.gen.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/libevent-release-2.1.8-stable/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/libevent-release-2.1.8-stable/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\Softwares\cmake-3.12.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/libevent-release-2.1.8-stable -BD:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/vcprojects --check-stamp-file D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/vcprojects/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Softwares\cmake-3.12.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/libevent-release-2.1.8-stable -BD:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/vcprojects --check-stamp-file D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/vcprojects/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/libevent-release-2.1.8-stable/CMakeLists.txt;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\CMakeLists.txt;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\AddCompilerFlags.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\CheckFileOffsetBits.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\CheckFunctionExistsEx.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\CheckFunctionKeywords.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\CheckPrototypeDefinition.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\CheckWaitpidSupportWNOWAIT.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\FindGit.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\LibeventConfig.cmake.in;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\LibeventConfigBuildTree.cmake.in;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\LibeventConfigVersion.cmake.in;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\VersionViaGit.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\evconfig-private.h.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\event-config.h.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\CMakeFiles\3.12.0-rc1\CMakeCCompiler.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\CMakeFiles\3.12.0-rc1\CMakeRCCompiler.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\CMakeFiles\3.12.0-rc1\CMakeSystem.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeCInformation.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeRCInformation.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CTest.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CTestTargets.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CTestUseLaunchers.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckCCompilerFlag.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckCSourceCompiles.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckCSourceRuns.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckCXXSourceCompiles.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckFunctionExists.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckIncludeFile.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckIncludeFileCXX.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckIncludeFiles.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckStructHasMember.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckSymbolExists.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckTypeSize.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckVariableExists.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\DartConfiguration.tcl.in;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\FindOpenSSL.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\FindPackageMessage.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\FindPythonInterp.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\FindZLIB.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\Platform\Windows.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\SelectLibraryConfigurations.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/libevent-release-2.1.8-stable/CMakeLists.txt;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\CMakeLists.txt;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\AddCompilerFlags.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\CheckFileOffsetBits.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\CheckFunctionExistsEx.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\CheckFunctionKeywords.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\CheckPrototypeDefinition.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\CheckWaitpidSupportWNOWAIT.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\FindGit.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\LibeventConfig.cmake.in;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\LibeventConfigBuildTree.cmake.in;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\LibeventConfigVersion.cmake.in;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\VersionViaGit.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\evconfig-private.h.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\event-config.h.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\CMakeFiles\3.12.0-rc1\CMakeCCompiler.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\CMakeFiles\3.12.0-rc1\CMakeRCCompiler.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\CMakeFiles\3.12.0-rc1\CMakeSystem.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeCInformation.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeRCInformation.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CTest.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CTestTargets.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CTestUseLaunchers.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckCCompilerFlag.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckCSourceCompiles.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckCSourceRuns.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckCXXSourceCompiles.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckFunctionExists.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckIncludeFile.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckIncludeFileCXX.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckIncludeFiles.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckStructHasMember.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckSymbolExists.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckTypeSize.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckVariableExists.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\DartConfiguration.tcl.in;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\FindOpenSSL.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\FindPackageMessage.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\FindPythonInterp.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\FindZLIB.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\Platform\Windows.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\SelectLibraryConfigurations.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/libevent-release-2.1.8-stable/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/libevent-release-2.1.8-stable/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\Softwares\cmake-3.12.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/libevent-release-2.1.8-stable -BD:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/vcprojects --check-stamp-file D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/vcprojects/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Softwares\cmake-3.12.0-rc1-win64-x64\bin\cmake.exe -HD:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/libevent-release-2.1.8-stable -BD:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/vcprojects --check-stamp-file D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/vcprojects/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/libevent-release-2.1.8-stable/CMakeLists.txt;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\CMakeLists.txt;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\AddCompilerFlags.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\CheckFileOffsetBits.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\CheckFunctionExistsEx.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\CheckFunctionKeywords.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\CheckPrototypeDefinition.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\CheckWaitpidSupportWNOWAIT.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\FindGit.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\LibeventConfig.cmake.in;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\LibeventConfigBuildTree.cmake.in;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\LibeventConfigVersion.cmake.in;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\VersionViaGit.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\evconfig-private.h.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\event-config.h.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\CMakeFiles\3.12.0-rc1\CMakeCCompiler.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\CMakeFiles\3.12.0-rc1\CMakeRCCompiler.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\CMakeFiles\3.12.0-rc1\CMakeSystem.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeCInformation.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeRCInformation.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CTest.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CTestTargets.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CTestUseLaunchers.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckCCompilerFlag.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckCSourceCompiles.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckCSourceRuns.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckCXXSourceCompiles.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckFunctionExists.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckIncludeFile.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckIncludeFileCXX.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckIncludeFiles.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckStructHasMember.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckSymbolExists.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckTypeSize.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckVariableExists.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\DartConfiguration.tcl.in;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\FindOpenSSL.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\FindPackageMessage.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\FindPythonInterp.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\FindZLIB.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\Platform\Windows.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\SelectLibraryConfigurations.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/DevelopmentEnvironment/sourcecodes/libevent-release-2.1.8-stable/libevent-release-2.1.8-stable/CMakeLists.txt;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\CMakeLists.txt;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\AddCompilerFlags.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\CheckFileOffsetBits.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\CheckFunctionExistsEx.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\CheckFunctionKeywords.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\CheckPrototypeDefinition.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\CheckWaitpidSupportWNOWAIT.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\FindGit.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\LibeventConfig.cmake.in;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\LibeventConfigBuildTree.cmake.in;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\LibeventConfigVersion.cmake.in;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\cmake\VersionViaGit.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\evconfig-private.h.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\event-config.h.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\CMakeFiles\3.12.0-rc1\CMakeCCompiler.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\CMakeFiles\3.12.0-rc1\CMakeRCCompiler.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\CMakeFiles\3.12.0-rc1\CMakeSystem.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeCInformation.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeRCInformation.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CTest.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CTestTargets.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CTestUseLaunchers.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckCCompilerFlag.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckCSourceCompiles.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckCSourceRuns.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckCXXSourceCompiles.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckFunctionExists.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckIncludeFile.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckIncludeFileCXX.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckIncludeFiles.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckStructHasMember.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckSymbolExists.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckTypeSize.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\CheckVariableExists.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\DartConfiguration.tcl.in;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\FindOpenSSL.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\FindPackageMessage.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\FindPythonInterp.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\FindZLIB.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\Platform\Windows.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\Softwares\cmake-3.12.0-rc1-win64-x64\share\cmake-3.12\Modules\SelectLibraryConfigurations.cmake;D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\vcprojects\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress.gen.c" />
+    <ClInclude Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress.gen.h" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_buffer.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_bufferevent.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_dns.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_et.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_finalize.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_http.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_listener.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_main.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_minheap.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_rpc.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_testutils.c" />
+    <ClInclude Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_testutils.h" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_util.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\tinytest.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\buffer.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\bufferevent.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\bufferevent_filter.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\bufferevent_pair.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\bufferevent_ratelim.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\bufferevent_sock.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\event.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\evmap.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\evthread.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\evutil.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\evutil_rand.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\evutil_time.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\listener.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\log.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\signal.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\strlcpy.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\bufferevent_openssl.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\evthread_win32.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\buffer_iocp.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\bufferevent_async.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\event_iocp.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\win32select.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\event_tagging.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\http.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\evdns.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\evrpc.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_iocp.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_thread.c" />
+    <ClCompile Include="D:\DevelopmentEnvironment\sourcecodes\libevent-release-2.1.8-stable\libevent-release-2.1.8-stable\test\regress_ssl.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
